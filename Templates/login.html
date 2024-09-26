@@ -107,6 +107,26 @@
                 .then(response => response.json())
                 .then(data => {
                     alert(data.message);
+                    if (data.reset_token) {
+                        const newPassword = prompt("Enter your new password:");
+                        if (newPassword) {
+                            return fetch('/confirm_reset', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({ 
+                                    email: email,
+                                    reset_token: data.reset_token,
+                                    new_password: newPassword
+                                }),
+                            });
+                        }
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
                 })
                 .catch((error) => {
                     console.error('Error:', error);
