@@ -1,0 +1,21 @@
+Code must be done in html, CSS, JS and python.
+
+create a login webpage using a clear design.
+Background must be black.
+the login form must be centered
+
+Use Roboto font 
+
+The login form must be contained in a square with rounded corners 
+
+The user and passwords must be stored in a Database
+
+if no user exists,  you should have a bottom to sign up and another form will be accesible where you will need to enter your username and password and confirm password. That should be added to the Database
+
+Also the form should have a forgot password and the user will be asked to enter a mail where the password will be sent
+
+
+WITH THIS PROMPT CSS AND HTML ARE IN THE SAME files
+
+
+    
