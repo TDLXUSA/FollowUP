@@ -98,8 +98,8 @@ def reset_password():
     return render_template('login.html')
 
 def send_password_reset_email(email, new_password):
-    sender_email = "your_email@example.com"  # Replace with your email
-    sender_password = "your_password"  # Replace with your email password
+    sender_email = "tdlxusa@gmail.com"  # Replace with your email
+    sender_password = "$InFlames1231!TDLGG"  # Replace with your email password
 
     msg = MIMEText(f"Your new password is: {new_password}")
     msg['Subject'] = "Password Reset"
